@@ -16,11 +16,11 @@ The data was obtained from the UCI Machine Learning Repository at: https://archi
 
 **Data preprocessing**
 
-The data was extracted in a form where the datasets were already quantified, which made preprocessing easier.
+The data was extracted in a form where the datasets were already quantified, which made preprocessing easier. We dropped the first column “ID” as we felt that it would not be useful in our data analysis. Those who claimed to have used Semeron are presumed to be over-claimants because it is not a legitimate drug. We will exclude these people who replied to anything other than CL0 for Semeron from the data frame since we can't be certain that their accounts of their drug use are true. We have also dropped the Semeron column.
 
 **Data cleaning/integration**
 
-We found no missing values in this data set. The fake drug, “Semeron” was removed from the data set. We also wanted to remove Chocolate and Caffeine, but decided to keep them and find any possible relationship between them and other attributes in our initial proposal.
+We checked for duplicate records, missing values, inconsistent values, outliers and duplicate rows. We found no null values, and duplicate records. Additionally we found mild outliers but decided to keep them since they seemed to be a result of natural variance. We also wanted to remove Chocolate, Caffeine and Alcohol columns but decided to keep them and find any possible relationship between them and other attributes in our initial proposal.
 
 **Data exploration**
 
