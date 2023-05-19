@@ -67,3 +67,72 @@ The goal was to to build a model that will predict the likelihood of drug addict
 Before we embarked on choosing which algorithms would best suit our data set, we first had to do the following:
 
 Preprocess data: Previously in our proposal, we preprocessed the data by identifying and removing null values (which were not existent in the data set). We removed the column “ID” which we felt like was not necessary to keep in the dataset as it did not have any actual value. We also removed rows that responded to anything other than “CL0” for a fictitious drug called Semeron, as we felt that those responses were not honest and it is not possible to feel any effect from a placebo drug. Here, we preprocessed the data further by categorizing all the responses into user and non-user by assigning values “1” as user and “0” as non-user. The data now reflects the classification problem we aim to solve.
+
+| Response | Response | Value | Class |
+|----------|----------|-------|-------|
+| 1. Never used     |  non-user | CL0   | 0     |
+| 2. Used over a decade ago       |  non-user | CL1   | 0     |
+| 3. Used in the last decade      |  user | CL2   | 1     |
+| 4. Used in last year       |  user | CL3   | 1     |
+| 5. Used in last month       |  user | CL4   | 1     |
+| 6. Used in last week       |  user | CL5   | 1     |
+| 7. Used in last day        |  user | CL6   | 1     |
+
+We also decided to encode the data, since categorical variables like age, level of education, gender, country of residence, ethnicity were already quantified in the original dataset. We have decided to give each value a code, since the quantified values don’t have any actual meaning or use. This will help us to better understand the data and helps with the overall interpretability which we believe will improve the overall performance of the models
+that will be used. Some of the categorical variables that have been encoded
+
+Age
+| Value   | Meaning   | Code |
+|---------|-----------|------|
+| -0.95197 | 18 - 24   | 0    |
+| -0.07854 | 25 - 34   | 1    |
+| 0.49788  | 35 - 44   | 2    |
+| 1.09449  | 45 - 54   | 3    |
+| 1.82213  | 55 - 64   | 4    |
+| 2.59171  | 65+       | 5    |
+
+Gender
+| Value   | Meaning | Code |
+|---------|---------|------|
+| 0.48246 | Female  | 0    |
+| -0.48246 | Male    | 1    |
+
+Education
+| Value   | Meaning                              | Code |
+|---------|--------------------------------------|------|
+| -2.43591 | Left School Before 16 years          | 0    |
+| -1.73790 | Left School at 16 years              | 1    |
+| -1.43719 | Left School at 17 years              | 2    |
+| -1.22751 | Left School at 18 years              | 3    |
+| -0.61113 | Some College, No Certificate Or Degree | 4    |
+| -0.05921 | Professional Certificate/ Diploma    | 5    |
+| 0.45468  | University Degree                     | 6    |
+| 1.16365  | Masters Degree                        | 7    |
+| 1.98437  | Doctorate Degree                      | 8    |
+
+Country
+| Value   | Meaning                | Code |
+|---------|------------------------|------|
+| -0.09765 | Australia              | 0    |
+| 0.24923  | Canada                 | 1    |
+| -0.46841 | New Zealand            | 2    |
+| -0.28519 | Other                  | 3    |
+| 0.21128  | Republic of Ireland    | 4    |
+| 0.96082  | UK                     | 5    |
+| -0.57009 | USA                    | 6    |
+
+Ethnicity
+| Value   | Meaning              | Code |
+|---------|----------------------|------|
+| -0.50212 | Asian                | 0    |
+| -1.10702 | Black                | 1    |
+| 1.90725  | Mixed-Black/Asian    | 2    |
+| 0.12600  | Mixed-White/Asian    | 3    |
+| -0.22166 | Mixed-White/Black    | 4    |
+| 0.11440  | Other                | 5    |
+| -0.31685 | White                | 6    |
+
+
+The graph below is just a general overview of all the drugs in the dataset as well as their frequency of use.
+![image](https://github.com/kechiemerole/Drug-Consumption-Analysis/assets/97633203/a38e9ad7-67b3-48d4-ac58-427d250b3394)
+
