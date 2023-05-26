@@ -133,6 +133,6 @@ Ethnicity
 | -0.31685 | White                | 6    |
 
 
-The graph below is just a general overview of all the drugs in the dataset as well as their frequency of use.
+The graph is a general overview of all the drugs in the dataset and their frequency of use.
 ![image](https://github.com/kechiemerole/Drug-Consumption-Analysis/assets/97633203/a38e9ad7-67b3-48d4-ac58-427d250b3394)
 
