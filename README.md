@@ -249,3 +249,11 @@ contenders.
 
 Above is the ROC for the subsets of the random forest algorithm with 88% accuracy
 
+### Logistic Regression
+Logistic Regression is a statistical method used for binary classification problems, where the goal is to predict a binary outcome (e.g., 0 or 1), in this case, “User” and “Non-user.” It models the relationship between a dependent binary variable and one or more independent variables. Logistic regression does not handle the class imbalance problems by default as it tries to optimize the overall accuracy without considering the class distribution. I address the class imbalance problem by using the stratified random sample to ensure that the training and test sets have about the same percentage of samples for each binary outcome.
+Here are the performance metrics:
+Accuracy: 0.8122503328894807
+Precision: 0.8471454880294659
+Recall: 0.888030888030888
+F1 Score: 0.8671065032987746
+I was able to train the data to an accuracy of 81% in relation to the target variable “Drug Use.” The chart includes the 3 features that positively relate to drug use and the remaining 7 that negatively relate to drug use. Based on the chart results, I can see that OScore relates the most with drug use, and Sensation seeking second and gender third. I am surprised to see that gender is coming in third. Additionally, gender differences in drug use may be influenced by social and cultural factors, such as gender roles and expectations, access to drugs, and social norms surrounding drug use.
