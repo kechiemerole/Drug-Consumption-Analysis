@@ -250,8 +250,9 @@ contenders.
 Above is the ROC for the subsets of the random forest algorithm with 88% accuracy
 
 ### Logistic Regression
-Logistic Regression is a statistical method used for binary classification problems, where the goal is to predict a binary outcome (e.g., 0 or 1), in this case, “User” and “Non-user.” It models the relationship betIen a dependent binary variable and one or more independent variables. Logistic regression does not handle the class imbalance problems by default as it tries to optimize the overall accuracy without considering the class distribution. I address the class imbalance problem by using the stratified random sample to ensure that the training and test sets have about the same percentage of samples for each binary outcome.
+Logistic Regression is a statistical method used for binary classification problems, where the goal is to predict a binary outcome (e.g., 0 or 1), in this case, “User” and “Non-user.” It models the relationship between a dependent binary variable and one or more independent variables. Logistic regression does not handle the class imbalance problems by default as it tries to optimize the overall accuracy without considering the class distribution. I address the class imbalance problem by using the stratified random sample to ensure that the training and test sets have about the same percentage of samples for each binary outcome.
 Here are the performance metrics:
+
 Accuracy: 0.8122503328894807
 Precision: 0.8471454880294659
 Recall: 0.888030888030888
